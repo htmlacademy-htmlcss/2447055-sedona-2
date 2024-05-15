@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Risa](https://up.htmlacademy.ru/htmlcss-individual/2/user/2447055).
-* Наставник: `Неизвестно`.
+- Студент: [Risa](https://up.htmlacademy.ru/htmlcss-individual/2/user/2447055).
+- Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
