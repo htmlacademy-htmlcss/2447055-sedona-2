@@ -55,7 +55,7 @@
       </header>
       <section class="catalog-hotel">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -96,8 +96,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-filter-button" type="submit">Применить</button>
-          <button class="catalog-filter-button button-reset" type="reset">Сбросить</button>
+          <div>
+            <button class="catalog-filter-button" type="submit">Применить</button>
+            <button class="catalog-filter-button button-reset" type="reset">Сбросить</button>
+          </div>
         </form>
         <p class="catalog-filter-result">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
@@ -127,6 +129,8 @@
           <li class="housing-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="" width="" height="">
+            </a>
+            <a class="product-card-link" href="#">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="product-card-info">Гостиница</span>
@@ -139,6 +143,8 @@
           <li class="housing-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="" width="" height="">
+            </a>
+            <a class="product-card-link" href="#">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="product-card-info">Гостиница</span>
@@ -151,6 +157,8 @@
           <li class="housing-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="" width="" height="">
+            </a>
+            <a class="product-card-link" href="#">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <span class="product-card-info">Гостиница</span>
@@ -163,6 +171,8 @@
           <li class="housing-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="#" alt="" width="" height="">
+            </a>
+            <a class="product-card-link" href="#">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <span class="product-card-info">Гостиница</span>
@@ -202,8 +212,8 @@
           <label>
             <span class="visually-hidden">Email</span>
             <input class="newsletter-field" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
-            <button class="newsletter-button" type="submit">Подписаться</button>
           </label>
+          <button class="newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
