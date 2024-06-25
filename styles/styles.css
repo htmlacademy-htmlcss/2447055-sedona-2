@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.page-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+  width: 160px;
+  height: 36px;
+  text-transform: uppercase;
+}
+
+.main-index {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.city-sedona {
+  background-image: url(../images/city-sedona-background.jpg);
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  min-height: 485px;
+}
+
+.main-index-img {
+  margin: 51px 371px 82px 371px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 620px;
+  height: 72px;
+  margin: 69px auto 25px;
+  color: #000000;
+}
+
+.advantages-item {
+  width: 230px;
+  height: 181px;
+  background-color: #83B3D31F;
+  padding: 102px 85px;
+  list-style-type: none;
+  }
+
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 230px;
+  height: 56px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  width: 230px;
+  height: 42px;
+}
+
+.advantages-item-city {
+  color: #FFFFFF ;
+  background-color: #82B3D3;
+}
+
+.advantages-item-road {
+  background-color: #83B3D333;
+}
+
+.advantages-item-bridge {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-photo-city {
+
+}
+
+.infrastructure-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 505px;
+  height: 72px;
+  margin: 64px auto 20px;
+  color: #000000;
+}
+
+.infrastructure-paragraph {
+  margin: 0 auto 64px;
+}
+
+.infrastructure-item {
+  width: 230px;
+  height: 223px;
+  list-style-type: none;
+  background-color: #83B3D31F;
+  padding: 81px 85px;
+}
+
+.infrastructure-item-food {
+  background-color: #FFFFFF;
+}
+
+.infrastructure-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 28px;
+  color: #000000;
+  margin: 30px auto;
+}
+
+.infrastructure-description {
+  font-size: 18px;
+  line-height: 21px;
+  height: 63px;
+}
+
+.catalog {
+  width: 592px;
+  height: 214px;
+  padding: 96px 304px;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 297px;
+  height: 36px;
+  margin: 0px auto 20px;
+  color: #000000;
+}
+
+.catalog p {
+  height: 52px;
+  margin: 0px auto 54px;
+}
+
+.catalog-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  border-radius: 4px;
+  width: 376px;
+  height: 52px;
+  text-transform: uppercase;
+}
+
+.newsletter {
+  background-image: url(../images/newsletter-form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 684px;
+  height: 214px;
+  padding: 96px 258px 104px;
+  color: #FFFFFF;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter p {
+
+}
+
+
+.page-footer {
+  height: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.inner-header {
+  background-image: url(../images/catalog-hotel-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
