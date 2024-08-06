@@ -203,5 +203,33 @@
         </a>
       </footer>
     </div>
+    <div class="modal modal-close">
+      <div class="modal-container">
+        <section class="modal-content">
+          <button class="modal-close-button" type="">
+            <span class="visually-hidden">Закрыть</span>
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.4907 4.78279L16.1984 3.49048L10.4907 9.19817L4.78303 3.49048L3.49072 4.78279L9.19842 10.4905L3.49072 16.1982L4.78303 17.4905L10.4907 11.7828L16.1984 17.4905L17.4907 16.1982L11.783 10.4905L17.4907 4.78279Z" fill="black" />
+            </svg>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-form-field modal-field-date">
+              Дата Заезда:<input class="modal-input-date" type="date" name="check-in-date">
+            </label>
+            <label class="modal-form-field modal-field-date">
+              Дата Выезда:<input class="modal-input-date" type="date" name="check-out-date">
+            </label>
+            <label class="modal-form-field modal-field-number">
+              Взрослые:<input class="modal-input-number" type="number" name="adults" placeholder="2">
+            </label>
+            <label class="modal-form-field modal-field-number">
+              Дети:<input class="modal-input-number" type="number" name="children" placeholder="2">
+            </label>
+            <button class="modal-search-button button" type="">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

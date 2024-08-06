@@ -99,7 +99,26 @@
                   </li>
                 </ul>
               </fieldset>
-              <div>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="range-label">
+                      <input class="range-input" type="number" name="min-price" value="0">от
+                    </label>
+                    <label class="range-label">
+                      <input class="range-input" type="number" name="max-price" value="9000">до
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 226px; left: 0;">
+                      <button class="range-toggle toggle-min" type="button"></button>
+                      <button class="range-toggle toggle-max" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="wrap-filter-button">
                 <button class="catalog-filter-button button" type="submit">Применить</button>
                 <button class="catalog-filter-button button-reset button" type="reset">Сбросить</button>
               </div>
@@ -118,37 +137,37 @@
             <ul class="sorting-list list-reset">
               <li class="sorting-item">
                 <a href="#">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 3H2V9H6V3Z" fill="#000000">
-                    <path d="M18 3H14V9H18V3Z" fill="#000000">
-                    <path d="M12 3H8V9H12V3Z" fill="#000000">
-                    <path d="M6 11H2V17H6V11Z" fill="#000000">
-                    <path d="M18 11H14V17H18V11Z" fill="#000000">
-                    <path d="M12 11H8V17H12V11Z" fill="#000000">
+                  <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3H2V9H6V3Z" fill="#000000"></path>
+                    <path d="M18 3H14V9H18V3Z" fill="#000000"></path>
+                    <path d="M12 3H8V9H12V3Z" fill="#000000"></path>
+                    <path d="M6 11H2V17H6V11Z" fill="#000000"></path>
+                    <path d="M18 11H14V17H18V11Z" fill="#000000"></path>
+                    <path d="M12 11H8V17H12V11Z" fill="#000000"></path>
                   </svg>
                   <span class="visually-hidden">Отобразить плитками</span>
                 </a>
               </li>
               <li class="sorting-item">
                 <a href="#">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 15H2V17H18V15Z" fill="#000000">
-                    <path d="M16 5V11H4V5H16ZM18 3H2V13H18V3Z" fill="#000000">
+                  <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15H2V17H18V15Z" fill="#000000"></path>
+                    <path d="M16 5V11H4V5H16ZM18 3H2V13H18V3Z" fill="#000000"></path>
                   </svg>
                   <span class="visually-hidden">Отобразить карточками</span>
                 </a>
               </li>
               <li class="sorting-item">
                 <a href="#">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 3H2V5H4V3Z" fill="#000000">
-                    <path d="M18 3H6V5H18V3Z" fill="#000000">
-                    <path d="M4 7H2V9H4V7Z" fill="#000000">
-                    <path d="M18 7H6V9H18V7Z" fill="#000000">
-                    <path d="M4 11H2V13H4V11Z" fill="#000000">
-                    <path d="M18 11H6V13H18V11Z" fill="#000000">
-                    <path d="M4 15H2V17H4V15Z" fill="#000000">
-                    <path d="M18 15H6V17H18V15Z" fill="#000000">
+                  <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3H2V5H4V3Z" fill="#000000"></path>
+                    <path d="M18 3H6V5H18V3Z" fill="#000000"></path>
+                    <path d="M4 7H2V9H4V7Z" fill="#000000"></path>
+                    <path d="M18 7H6V9H18V7Z" fill="#000000"></path>
+                    <path d="M4 11H2V13H4V11Z" fill="#000000"></path>
+                    <path d="M18 11H6V13H18V11Z" fill="#000000"></path>
+                    <path d="M4 15H2V17H4V15Z" fill="#000000"></path>
+                    <path d="M18 15H6V17H18V15Z" fill="#000000"></path>
                   </svg>
                   <span class="visually-hidden">Отобразить списком</span>
                 </a>
@@ -164,14 +183,12 @@
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <div class="product-card-info">
-                  <span class="product-card-type">Гостиница</span>
-                  <b class="product-card-price"> От 4000 ₽</b>
-                  <a class="product-card-details" href="#">Подробнее</a>
-                  <button class="product-card-button button" type="button">В избранное</button>
-                  <span class="product-card-stars">4 звезды</span>
-                  <span class="product-card-rating">Рейтинг: 8,5</span>
-                </div>
+                <span class="product-card-type">Гостиница</span>
+                <b class="product-card-price"> От 4000 ₽</b>
+                <a class="product-card-details" href="#">Подробнее</a>
+                <button class="product-card-button button" type="button">В избранное</button>
+                <span class="product-card-stars four-stars">4 звезды</span>
+                <span class="product-card-rating">Рейтинг: 8,5</span>
               </li>
               <li class="housing-card">
                 <a class="product-card-link" href="#">
@@ -180,14 +197,12 @@
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
-                <div class="product-card-info">
-                  <span class="product-card-type">Гостиница</span>
-                  <b class="product-card-price"> От 5000 ₽</b>
-                  <a class="product-card-details" href="#">Подробнее</a>
-                  <button class="product-card-button product-card-favourites button" type="button">В избранном</button>
-                  <span class="product-card-stars">4 звезды</span>
-                  <span class="product-card-rating">Рейтинг: 9,2</span>
-                </div>
+                <span class="product-card-type">Гостиница</span>
+                <b class="product-card-price"> От 5000 ₽</b>
+                <a class="product-card-details" href="#">Подробнее</a>
+                <button class="product-card-button product-card-favourites button" type="button">В избранном</button>
+                <span class="product-card-stars four-stars">4 звезды</span>
+                <span class="product-card-rating">Рейтинг: 9,2</span>
               </li>
               <li class="housing-card">
                 <a class="product-card-link" href="#">
@@ -196,14 +211,12 @@
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
-                <div class="product-card-info">
-                  <span class="product-card-type">Гостиница</span>
-                  <b class="product-card-price"> От 2500 ₽</b>
-                  <a class="product-card-details" href="#">Подробнее</a>
-                  <button class="product-card-button button" type="button">В избранное</button>
-                  <span class="product-card-stars">3 звезды</span>
-                  <span class="product-card-rating">Рейтинг: 6,9</span>
-                </div>
+                <span class="product-card-type">Гостиница</span>
+                <b class="product-card-price"> От 2500 ₽</b>
+                <a class="product-card-details" href="#">Подробнее</a>
+                <button class="product-card-button button" type="button">В избранное</button>
+                <span class="product-card-stars three-stars">3 звезды</span>
+                <span class="product-card-rating">Рейтинг: 6,9</span>
               </li>
               <li class="housing-card">
                 <a class="product-card-link" href="#">
@@ -212,14 +225,12 @@
                 <a class="product-card-link" href="#">
                   <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
-                <div class="product-card-info">
-                  <span class="product-card-type">Гостиница</span>
-                  <b class="product-card-price"> От 1500 ₽</b>
-                  <a class="product-card-details" href="#">Подробнее</a>
-                  <button class="product-card-button button" type="button">В избранное</button>
-                  <span class="product-card-stars">2 звезды</span>
-                  <span class="product-card-rating">Рейтинг: 5,0</span>
-                </div>
+                <span class="product-card-type">Гостиница</span>
+                <b class="product-card-price"> От 1500 ₽</b>
+                <a class="product-card-details" href="#">Подробнее</a>
+                <button class="product-card-button button" type="button">В избранное</button>
+                <span class="product-card-stars two-stars">2 звезды</span>
+                <span class="product-card-rating">Рейтинг: 5,0</span>
               </li>
             </ul>
           </div>
@@ -237,7 +248,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">...</a>
+              <a class="pagination-link pagination-ellipsis">...</a>
             </li>
             </li>
             <li class="pagination-item">
