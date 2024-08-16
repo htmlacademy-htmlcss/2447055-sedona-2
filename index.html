@@ -206,7 +206,7 @@
     <div class="modal modal-close">
       <div class="modal-container">
         <section class="modal-content">
-          <button class="modal-close-button" type="">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.4907 4.78279L16.1984 3.49048L10.4907 9.19817L4.78303 3.49048L3.49072 4.78279L9.19842 10.4905L3.49072 16.1982L4.78303 17.4905L10.4907 11.7828L16.1984 17.4905L17.4907 16.1982L11.783 10.4905L17.4907 4.78279Z" fill="black" />
@@ -215,18 +215,32 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-form-field modal-field-date">
-              Дата Заезда:<input class="modal-input-date" type="date" name="check-in-date">
+              Дата Заезда:
+              <input class="modal-input-date" type="text" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020">
             </label>
+            <span class="check-in-comment">Мы не можем отправить вас в прошлое.</span>
             <label class="modal-form-field modal-field-date">
-              Дата Выезда:<input class="modal-input-date" type="date" name="check-out-date">
+              Дата Выезда:
+              <input class="modal-input-date" type="text" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
             </label>
+            <span class="check-out-comment">На эти даты есть свободные номера. Пока есть.</span>
             <label class="modal-form-field modal-field-number">
-              Взрослые:<input class="modal-input-number" type="number" name="adults" placeholder="2">
+              Взрослые:
+              <button class="modal-input-minus" type="button">-</button>
+              <input class="modal-input-number" type="number" name="adults" placeholder="2">
+              <button class="modal-input-plus" type="button">+</button>
             </label>
+            <button class="modal-input-minus" type="button">-</button>
             <label class="modal-form-field modal-field-number">
-              Дети:<input class="modal-input-number" type="number" name="children" placeholder="2">
+              Дети:
+              <div class="modal-tooltip">i
+                <span class="modal-tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
+              <input class="modal-input-number" type="number" name="children" placeholder="2">
+
             </label>
-            <button class="modal-search-button button" type="">Найти</button>
+            <button class="modal-input-plus" type="button">+</button>
+            <button class="modal-search-button button" type="submit">Найти</button>
           </form>
         </section>
       </div>

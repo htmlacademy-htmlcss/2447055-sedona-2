@@ -103,22 +103,20 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group range">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <div class="range">
-                  <div class="range-wrapper-inputs">
-                    <label class="range-label">
-                      <input class="range-input" type="number" name="min-price" value="0">от
-                    </label>
-                    <label class="range-label">
-                      <input class="range-input" type="number" name="max-price" value="9000">до
-                    </label>
-                  </div>
-                  <div class="range-scale">
-                    <div class="range-bar" style="width: 226px; left: 0;">
-                      <button class="range-toggle toggle-min" type="button"></button>
-                      <button class="range-toggle toggle-max" type="button"></button>
-                    </div>
+                <div class="range-wrapper-inputs">
+                  <label class="range-label">
+                    <input class="range-input" type="number" name="min-price" value="0"><span class="range-label-text">от</span>
+                  </label>
+                  <label class="range-label">
+                    <input class="range-input" type="number" name="max-price" value="9000"><span class="range-label-text">до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 226px; left: 0;">
+                    <button class="range-toggle toggle-min" type="button"></button>
+                    <button class="range-toggle toggle-max" type="button"></button>
                   </div>
                 </div>
               </fieldset>
@@ -140,7 +138,7 @@
             </select>
             <ul class="sorting-list list-reset">
               <li class="sorting-item">
-                <a href="#">
+                <a class="sorting-item-link" href="#">
                   <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 3H2V9H6V3Z" fill="#000000"></path>
                     <path d="M18 3H14V9H18V3Z" fill="#000000"></path>
@@ -153,7 +151,7 @@
                 </a>
               </li>
               <li class="sorting-item">
-                <a href="#">
+                <a class="sorting-item-link" href="#">
                   <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 15H2V17H18V15Z" fill="#000000"></path>
                     <path d="M16 5V11H4V5H16ZM18 3H2V13H18V3Z" fill="#000000"></path>
@@ -162,7 +160,7 @@
                 </a>
               </li>
               <li class="sorting-item">
-                <a href="#">
+                <a class="sorting-item-link" href="#">
                   <svg width="16" height="14" viewBox="2 3 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 3H2V5H4V3Z" fill="#000000"></path>
                     <path d="M18 3H6V5H18V3Z" fill="#000000"></path>
