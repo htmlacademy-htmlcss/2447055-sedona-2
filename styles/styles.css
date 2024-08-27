@@ -860,9 +860,24 @@ body {
 
 .button-reset {
   background-color: rgba(0, 0, 0, 0);
+  outline: none;
 }
 
-top;
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: #83b3d3 solid 3px;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
+}
 
 /*Сортировка результатов*/
 
