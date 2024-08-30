@@ -100,6 +100,10 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link-current {
+  padding-bottom: 0;
+}
+
 .navigation-link-current::after {
   content: "";
   display: block;
@@ -110,15 +114,12 @@ body {
 
 .navigation-search-button {
   width: 20px;
+  height: 20px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  margin: 0 8px;
-}
-
-.search {
   background-image: url("/images/search.svg");
   background-repeat: no-repeat;
-  background-position: top 21px center;
+  margin: 0 8px;
 }
 
 .favourites {
@@ -126,6 +127,9 @@ body {
   background-repeat: no-repeat;
   background-position: top 21px center;
   margin-right: 10px;
+}
+
+.favourites > .navigation-link {
 }
 
 .favorites-number {
@@ -154,6 +158,7 @@ body {
   border: none;
   margin-top: 14px;
   outline: none;
+  margin-left: 20px;
 }
 
 .navigation-button:hover,
@@ -436,6 +441,16 @@ body {
   padding-left: 20px;
   height: 52px;
   width: 432px;
+  outline: none;
+}
+
+.newsletter-field:hover {
+  background-color: #e6e6e6;
+}
+
+.newsletter-field:focus {
+  background-color: #e6e6e6;
+  outline: #83b3d3 solid 3px;
 }
 
 .newsletter-button {
@@ -572,16 +587,18 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-/* .breadcrumbs-item::after {
+.breadcrumbs-item::after {
   content: "";
   width: 8px;
+  height: 21px;
   background-image: url("/images/arrow-breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-size: auto;
-} */
+  background-position: top 10px center;
+  display: inline-block;
+}
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -594,7 +611,7 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  outline: #000000;
+  opacity: 1;
 }
 
 .breadcrumbs-link:active {
@@ -704,8 +721,7 @@ body {
   border-radius: 5px;
 }
 
-.control-input:hover + .control-checkbox-mark,
-.control-input:hover + .control-radio-mark {
+.control:hover {
   opacity: 0.6;
 }
 
@@ -714,8 +730,7 @@ body {
   outline: #83b3d3 solid 3px;
 }
 
-.control-input:active + .control-checkbox-mark,
-.control-input:active + .control-radio-mark {
+.control:active {
   opacity: 0.3;
 }
 
@@ -864,18 +879,23 @@ body {
 }
 
 .button-reset:hover {
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0.6;
 }
 
 .button-reset:focus {
+  background-color: rgba(0, 0, 0, 0);
   outline: #83b3d3 solid 3px;
 }
 
 .button-reset:active {
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0.3;
+  outline: none;
 }
 
 .button-reset:disabled {
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0.1;
 }
 
@@ -903,11 +923,15 @@ body {
 
 .select-control {
   font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
   width: 292px;
   height: 49px;
   padding: 14px 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   background-image: url("/images/arrow-select.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1034,12 +1058,6 @@ body {
 .product-card-details:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.product-card-details:disabled {
-  background-color: #e5e5e5;
-  color: #ffffff;
-  pointer-events: none;
 }
 
 .product-card-button {
@@ -1223,25 +1241,42 @@ body {
   outline: none;
 }
 
+.modal-close-button > svg {
+  fill: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: #83b3d3 solid 3px;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  outline: none;
+  fill-opacity: 0.3;
+}
+
 .modal-title {
   text-align: left;
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 30px 64px 0;
   text-transform: uppercase;
 }
 
 .modal-form {
   display: grid;
   grid-template-columns: 247px 242px;
-  row-gap: 48px;
+  row-gap: 23px;
   column-gap: 88px;
 }
 
 .modal-field-date {
   grid-column: span 2;
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -1252,6 +1287,7 @@ body {
   line-height: 1.33;
   width: 400px;
   padding: 12px 20px;
+  margin-left: auto;
   background-color: #f2f2f2;
   background-image: url("/images/date.svg");
   background-repeat: no-repeat;
@@ -1261,24 +1297,35 @@ body {
   outline: none;
 }
 
+.modal-input-date:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-input-date:focus {
+  background-color: #e6e6e6;
+  outline: #83b3d3 solid 3px;
+}
+
 .check-in-comment {
-  position: absolute;
-  top: 52px;
-  left: 137px;
+  display: block;
+  margin-top: 4px;
+  margin-left: 137px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.31;
+  text-align: left;
   padding: 0 20px;
   color: #ff5757;
 }
 
 .check-out-comment {
-  position: absolute;
-  top: 52px;
-  left: 137px;
+  display: block;
+  margin-top: 4px;
+  margin-left: 137px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.31;
+  text-align: left;
   padding: 0 20px;
   color: #333333;
 }
@@ -1307,6 +1354,11 @@ body {
   outline: none;
 }
 
+.modal-input-number:hover,
+.modal-input-number:focus {
+  background-color: #e6e6e6;
+}
+
 .modal-input-number::-webkit-outer-spin-button,
 .modal-input-number::-webkit-inner-spin-button {
   appearance: none;
@@ -1329,18 +1381,59 @@ body {
   outline: none;
 }
 
+.modal-input-minus > svg,
+.modal-input-plus > svg {
+  fill: #756157;
+  fill-opacity: 0.3;
+  border-radius: 4px;
+}
+
+.modal-input-minus:hover > svg,
+.modal-input-plus:hover > svg {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.modal-input-minus:focus > svg,
+.modal-input-plus:focus > svg {
+  fill: #000000;
+  fill-opacity: 1;
+  outline: #82b3d3 solid 3px;
+}
+
+.modal-input-minus:active > svg,
+.modal-input-plus:active > svg {
+  fill: #756157;
+  fill-opacity: 0.3;
+  outline: none;
+}
+
 .modal-search-button {
   grid-column: span 2;
-  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+  padding: 18px 77px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #83b3d3;
   border: none;
   border-radius: 10px;
+  margin-top: 25px;
   outline: none;
+}
+
+.modal-search-button:hover,
+.modal-search-button:focus {
+  background-color: #68a2ca;
+}
+
+.modal-search-button:focus {
+  background-color: #68a2ca;
+}
+
+.modal-search-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-close {
