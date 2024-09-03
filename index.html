@@ -30,8 +30,8 @@
                 <span class="visually-hidden">Поиск</span>
               </button>
             </li>
-            <li class="navigation-item favourites">
-              <a class="navigation-link" href="#">
+            <li class="navigation-item">
+              <a class="navigation-link favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-number">12</span>
               </a>
@@ -118,7 +118,7 @@
         <ul class="footer-social-list list-reset">
           <li class="footer-social-item">
             <a href="https://vk.com/htmlacademy">
-              <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9498 0.948C24.1158 0.402 23.9498 0 23.1548
                 0H20.5298C19.8618 0 19.5538 0.347 19.3868 0.73C19.3868 0.73 18.0518 3.926 16.1608 6.002C15.5488
                 6.604 15.2708 6.795 14.9368 6.795C14.7698 6.795 14.5188 6.604 14.5188 6.057V0.948C14.5188 0.292
@@ -148,7 +148,7 @@
           </li>
           <li class="footer-social-item">
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="23" height="22" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244
                 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5 22.5002 15.9062 22.5002 14.1V3.9C22.2813
                 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z">
@@ -211,17 +211,19 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-field-date">
-              Дата Заезда:
+              <span class="modal-label-text">Дата Заезда:</span>
               <input class="modal-input-date" type="text" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="check-in-comment">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="modal-field-date">
-              Дата Выезда:
+              <span class="modal-label-text">Дата Выезда:</span>
               <input class="modal-input-date" type="text" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="check-out-comment">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="modal-wrapper">
-              <label class="modal-field-number" for="modal-adults">Взрослые:</label>
+              <label class="modal-field-number" for="modal-adults">
+                <span class="modal-label-text">Взрослые:</span>
+              </label>
               <button class="modal-input-minus button" type="button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 9V11H17V9H3Z">
@@ -235,7 +237,9 @@
               </button>
             </div>
             <div class="modal-wrapper">
-              <label class="modal-field-number" for="modal-children">Дети:</label>
+              <label class="modal-field-number" for="modal-children">
+                <span class="modal-label-text">Дети:</span>
+              </label>
               <div class="modal-tooltip">
                 <button class="modal-tooltip-toggle button" type="button" aria-labelledby="tooltip-label-date">i</button>
                 <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами,

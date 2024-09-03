@@ -67,12 +67,13 @@ body {
 }
 
 .page-header {
-  height: 64px;
+  min-height: 64px;
   position: relative;
 }
 
 .navigation {
   display: flex;
+  align-items: flex-start;
   column-gap: 30px;
   width: 1060px;
   margin: 0 auto;
@@ -80,14 +81,21 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-link-logo {
+  height: 64px;
   width: 140px;
 }
 
 .navigation-user {
+  min-width: 268px;
+  display: flex;
+  justify-content: end;
+  align-content: start;
   margin-left: auto;
+  margin-top: 15px;
 }
 
 .navigation-link {
@@ -98,6 +106,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   padding: 20px 16px;
+}
+
+.navigation-link:hover {
+  opacity: 0.7;
+}
+
+.navigation-link:active {
+  opacity: 0.4;
 }
 
 .navigation-link-current {
@@ -113,23 +129,44 @@ body {
 }
 
 .navigation-search-button {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 23px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   background-image: url("/images/search.svg");
   background-repeat: no-repeat;
-  margin: 0 8px;
+  background-size: 22px 20px;
+  background-position: bottom 2px center;
+  margin: 7px 13px 7px 8px;
+}
+
+.navigation-search-button:hover {
+  opacity: 0.7;
+}
+
+.navigation-search-button:active {
+  opacity: 0.4;
 }
 
 .favourites {
+  width: 20px;
+  height: 20px;
   background-image: url("/images/heart.svg");
   background-repeat: no-repeat;
-  background-position: top 21px center;
-  margin-right: 10px;
+  background-size: 22px 20px;
+  background-position: center;
+  margin: 8px 10px;
+  margin-right: 12px;
+  position: relative;
+  padding: 0;
 }
 
-.favourites > .navigation-link {
+.favourites:hover {
+  opacity: 0.7;
+}
+
+.favourites:active {
+  opacity: 0.4;
 }
 
 .favorites-number {
@@ -142,7 +179,8 @@ body {
   background-color: #7db54f;
   padding: 5px;
   position: absolute;
-  top: 12px;
+  top: -11px;
+  left: 8px;
 }
 
 .navigation-button {
@@ -156,7 +194,6 @@ body {
   height: 36px;
   text-transform: uppercase;
   border: none;
-  margin-top: 14px;
   outline: none;
   margin-left: 20px;
 }
@@ -182,6 +219,7 @@ body {
 }
 
 .hero {
+  height: 485px;
   background-image: url("../images/hero-divider.svg"), url("../images/hero-background.jpg");
   background-color: #333333;
   background-size: 1200px auto, cover;
@@ -209,6 +247,7 @@ body {
 
 .advantages-paragraph {
   margin: 0 auto 90px;
+  padding: 0 30px;
 }
 
 .advantages-list {
@@ -306,7 +345,7 @@ body {
 
 .infrastructure-item {
   width: 230px;
-  padding: 81px 85px;
+  padding: 81px 85px 63px 85px;
 }
 
 .infrastructure-item:nth-child(2n+1) {
@@ -422,6 +461,9 @@ body {
 }
 
 .newsletter p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.18;
   width: 475px;
   margin: 0 auto 54px;
 }
@@ -487,6 +529,7 @@ body {
 .page-footer {
   display: grid;
   grid-template-columns: 142px 720px 115px;
+  column-gap: 40px;
   justify-content: space-between;
   align-items: center;
   padding: 40px 70px 30px;
@@ -536,6 +579,8 @@ body {
 
 .link-htmlacademy {
   outline: none;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
 .link-htmlacademy svg {
@@ -605,6 +650,7 @@ body {
   font-size: 16px;
   line-height: 1.31;
   outline: none;
+  text-decoration: none;
 }
 
 .breadcrumbs-link:hover {
@@ -625,11 +671,11 @@ body {
   display: flex;
 }
 
-.catalog-filter>:nth-child(1n) {
+.catalog-filter > :nth-child(1n) {
   margin-right: 70px;
 }
 
-.catalog-filter>:last-child {
+.catalog-filter > :last-child {
   margin-right: 0;
 }
 
@@ -1021,6 +1067,14 @@ body {
   margin: 0;
 }
 
+.product-card-link:hover {
+  opacity: 0.8;
+}
+
+.product-card-link:active {
+  opacity: 0.6;
+}
+
 .product-card-type {
   font-size: 18px;
   line-height: 1.17;
@@ -1365,6 +1419,10 @@ body {
   appearance: none;
 }
 
+.modal-label-text {
+  max-width: 120px;
+}
+
 .modal-input-minus {
   width: 40px;
   padding: 14px 10px 11px;
@@ -1445,6 +1503,7 @@ body {
   position: relative;
   width: 26px;
   height: 26px;
+  margin-right: 5px;
 }
 
 .modal-tooltip-toggle {
@@ -1457,6 +1516,15 @@ body {
   border: none;
   border-radius: 13px;
   display: block;
+  outline: none;
+}
+
+.modal-tooltip-toggle:hover {
+  opacity: 0.7;
+}
+
+.modal-tooltip-toggle:focus {
+  outline: #333333 solid 2px;
 }
 
 .modal-tooltip-text {
@@ -1493,9 +1561,3 @@ body {
 .modal-tooltip-toggle:focus + .modal-tooltip-text {
   display: block;
 }
-
-
-
-/* * {
-  outline: red solid 1px;
-} */
