@@ -560,20 +560,20 @@ body {
   align-items: center;
 }
 
-.footer-social-item a {
+.footer-social-link {
   outline: none;
 }
 
-.footer-social-item svg {
+.footer-social-link svg {
   fill: #83b3d3;
 }
 
-.footer-social-item a:hover svg,
-.footer-social-item a:focus svg {
+.footer-social-link:hover svg,
+.footer-social-link:focus svg {
   fill: #68a2ca;
 }
 
-.footer-social-item a:active svg {
+.footer-social-link:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
